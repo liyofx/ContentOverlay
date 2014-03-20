@@ -1,0 +1,5 @@
+<resources>
+
+     <dimen name="touch_slop">32.0dip</dimen>
+
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    <style name="ContentOverlay" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimationActivity</item>
+    </style>
+
+    <style name="MyAnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/enter_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/exit_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/enter_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/exit_right</item>
+        <item name="android:taskOpenEnterAnimation">@anim/enter_right</item>
+        <item name="android:taskOpenExitAnimation">@anim/exit_left</item>
+        <item name="android:taskCloseEnterAnimation">@anim/enter_left</item>
+        <item name="android:taskCloseExitAnimation">@anim/exit_right</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/enter_right</item>
+        <item name="android:taskToFrontExitAnimation">@anim/exit_left</item>
+        <item name="android:taskToBackEnterAnimation">@anim/enter_left</item>
+        <item name="android:taskToBackExitAnimation">@anim/exit_right</item>
+    </style>
+    
+</resources>
